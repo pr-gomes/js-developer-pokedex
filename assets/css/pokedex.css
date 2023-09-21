@@ -78,12 +78,78 @@
     background-color: #f9aec7;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.borda {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.curso {
+    cursor: pointer;
+    width: 80px;
+    margin: .80rem 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+.title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 700;
+    text-align: center;
+    margin: .635em auto;
+    width: 300px;
+    padding: 0.365rem;
+    background-image: linear-gradient(to right, red, black, white);
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pokebola {
+    cursor: pointer;
+    width: 80px;
+    margin: .80rem 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+.pokebola:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
+}
+
 .pokemon {
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+}
+
+.pokemon:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+    transition: 0.9;
 }
 
 .pokemon .number {
@@ -137,13 +203,20 @@
 }
 
 .pagination button {
-    padding: .25rem .5rem;
+    padding: 1rem;
     margin: .25rem 0;
-    font-size: .625rem;
+    font-size: 1rem;
     color: #fff;
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    opacity: 0.75;
+    transition: 0.4s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.644);
 }
 
 @media screen and (min-width: 380px) {

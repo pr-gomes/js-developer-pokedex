@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
+    <link rel="shortcut icon" href="./assets/img/pokebola.png" type="image/x-icon">
+
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -23,16 +25,37 @@
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
 
+    <div class="links">
+        <a href="https://pokeapi.co/">
+            <img src="./assets/img/pokebola.png" class="pokebola" alt="Pokebola">
+        </a>
+        <div class="borda"></div>
+        <a href="https://www.dio.me/">
+            <img src="./assets/img/dio.png" class="curso" alt="Dio Cursos">
+        </a>
+    </div>
+    <section class="content">
+        <div class="headers">
+            <img src="./assets/img/pokemon_logo.png" class="logo_pokemon" alt="pokemon logo">
+
+            <div class="botao">
+                <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+                    <div class="toggle-switch"></div>
+                </label>
+                <label class="label_ipt" for="alternar-musica">
+                    Música Pokemon
+                </label>
+            </div>
+        </div>
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Carregar mais Pokémon
             </button>
         </div>
     </section>

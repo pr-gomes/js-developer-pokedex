@@ -45,3 +45,16 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
+const musicaFocoInput = document.querySelector('#alternar-musica')
+const musica = new Audio('/assets/img/musica.mpeg')
+musica.loop = true
+
+musicaFocoInput.addEventListener('change', () => {
+    if(musica.paused) {
+        musica.play()
+    } else {
+        musica.pause()
+    }
+    musica.volume = 0.7
+})

@@ -1,17 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_pokemon {
+    margin:1rem;
+    width: 200px;
+}
+.logo_dio {
+    width: 180px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .825rem;
+}
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-switch {
+    text-align: center;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 1.6rem;
+    width: 4.9em;
+    height: 2.2rem;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+    margin-bottom: .650rem;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: #ffff00;
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 3rem;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.label_ipt {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 @media screen and (min-width: 992px) {
