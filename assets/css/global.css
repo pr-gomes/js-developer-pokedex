@@ -12,7 +12,13 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
+::-webkit-scrollbar {
+    width: 16px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffff00; /* Cor de fundo do "polegar" */
+    border-radius: 6px; /* Arredondamento das bordas do "polegar" */
+}
 .content {
     width: 100vw;
     height: 100vh;
