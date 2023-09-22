@@ -16,8 +16,8 @@ function convertPokemonToLi(pokemon) {
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
 
-                <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
+                <img src="${pokemon.photo}" alt="${pokemon.name}">
+                
             </div>
         </li>
     `
@@ -46,15 +46,25 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
+
+
 const musicaFocoInput = document.querySelector('#alternar-musica')
 const musica = new Audio('/assets/img/musica.mpeg')
 musica.loop = true
 
 musicaFocoInput.addEventListener('change', () => {
-    if(musica.paused) {
+    if (musica.paused) {
         musica.play()
     } else {
         musica.pause()
     }
     musica.volume = 0.5
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+        document.getElementById("content_caracteristica").classList.remove('caracteristica');
+    });
+});
+

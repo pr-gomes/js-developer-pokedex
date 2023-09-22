@@ -109,6 +109,11 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
 }
+.caracteristica {
+    display: inline;
+
+}
+
 
 @media screen and (min-width: 992px) {
     .content {
