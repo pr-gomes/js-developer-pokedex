@@ -56,5 +56,5 @@ musicaFocoInput.addEventListener('change', () => {
     } else {
         musica.pause()
     }
-    musica.volume = 0.7
+    musica.volume = 0.5
 })
