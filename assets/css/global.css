@@ -12,13 +12,16 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
 ::-webkit-scrollbar {
-    width: 16px; 
+    width: 16px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background-color: #ffff00; /* Cor de fundo do "polegar" */
-    border-radius: 6px; /* Arredondamento das bordas do "polegar" */
+    background-color: #ffff00;
+    border-radius: 6px;
 }
+
 .content {
     width: 100vw;
     height: 100vh;
@@ -31,15 +34,18 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .logos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .logo_pokemon {
-    margin:1rem;
+    margin: 1rem;
     width: 200px;
 }
+
 .logo_dio {
     width: 180px;
 }
@@ -109,11 +115,6 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
 }
-.caracteristica {
-    display: inline;
-
-}
-
 
 @media screen and (min-width: 992px) {
     .content {
