@@ -46,8 +46,6 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-
-
 const musicaFocoInput = document.querySelector('#alternar-musica')
 const musica = new Audio('/assets/img/musica.mpeg')
 musica.loop = true
@@ -60,11 +58,3 @@ musicaFocoInput.addEventListener('change', () => {
     }
     musica.volume = 0.5
 })
-
-document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById("btn");
-    btn.addEventListener("click", () => {
-        document.getElementById("content_caracteristica").classList.remove('caracteristica');
-    });
-});
-
